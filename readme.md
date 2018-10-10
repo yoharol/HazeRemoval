@@ -4,7 +4,7 @@
 
 对于一张带有雾气的原图*src*，首先统计每一个像素点的RGB通道中数值最小者为暗通道值，然后用窗口大小为7的最小值滤波来处理图片，处理后的暗通道示意如下：
 
-![output_dim](F:\Program Files (x86)\VCproject\skyFog\output_origin\3\output_dim.bmp)
+![output_dim](https://github.com/LunaElfGaming/HazeRemoval/raw/master/output_origin/3/output_dim.bmp)
 
 计算出暗通道图像*$dim$*后，接下来估计大气光值。将所有像素点的坐标、颜色、暗通道全部存储在结构体*$Pixel$*构成的Vector *$pix$*中，随后对pix按照暗通道值从大到小排序，取前0.1%为参照，找出其中亮度最高的像素点作为大气光值估计，存储在Pixel类的变量*max_pix*中。
 
