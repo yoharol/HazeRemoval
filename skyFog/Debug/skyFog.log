@@ -1,0 +1,6 @@
+﻿  skyFog.cpp
+f:\program files (x86)\vcproject\skyfog\skyfog\skyfog.cpp(98): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+f:\program files (x86)\vcproject\skyfog\skyfog\skyfog.cpp(122): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+f:\program files (x86)\vcproject\skyfog\skyfog\skyfog.cpp(132): warning C4244: “=”: 从“float”转换到“uchar”，可能丢失数据
+f:\program files (x86)\vcproject\skyfog\skyfog\skyfog.cpp(65): warning C4101: “bgr”: 未引用的局部变量
+opencv_world341d.lib(opencv_world341d.dll) : fatal error LNK1112: 模块计算机类型“x64”与目标计算机类型“X86”冲突
