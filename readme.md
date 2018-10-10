@@ -26,23 +26,23 @@ $J_C(x)=A_C-\frac{A_C-I_C(x)}{t(x)}$
 
 以第三张为例，原图如下：
 
-![output_origin](F:\Program Files (x86)\VCproject\skyFog\output_origin\3\output_origin.bmp)
+![output_origin](https://github.com/LunaElfGaming/HazeRemoval/raw/master/output_origin/3/output_origin.bmp)
 
 
 
 图中红色的圈标注了选取为大气光的像素点，最终得到处理结果如下：
 
-![output](F:\Program Files (x86)\VCproject\skyFog\output_origin\3\output.bmp)
+![output](https://github.com/LunaElfGaming/HazeRemoval/raw/master/output_origin/3/output.bmp)
 
 图中总体颜色很好地去除了雾气效果，颜色非常显眼且分辨率比较好地保留了。
 
 图二的处理结果则表现出了算法对浓雾处理能力的不足：
 
-![output_origin](F:\Program Files (x86)\VCproject\skyFog\output_origin\2\output_origin.bmp)
+![output_origin](https://github.com/LunaElfGaming/HazeRemoval/raw/master/output_origin/2/output_origin.bmp)
 
 可以看到算法非常正确地选取了大气光点，但图中部分浓雾已经几乎与天光相同，因此处理结果也将部分景色处理成了天空：
 
-![output](F:\Program Files (x86)\VCproject\skyFog\output_origin\2\output.bmp)
+![output](https://github.com/LunaElfGaming/HazeRemoval/raw/master/output_origin/2/output.bmp)
 
 不仅出现了缺口，部分雾气直接变成了深色。
 
@@ -54,7 +54,7 @@ $T=MC=\left[\begin{matrix}0.0255&-0.1275&1.0965\\-0.3315&1.5045&-0.1785\\0.5610&
 
 处理函数为BGRtoT（openCV中RGB图为BGR顺序），处理后图片的色彩不会变化，而图三的处理结果出现了较大的差别，图片色彩更加鲜艳
 
-![output](F:\Program Files (x86)\VCproject\skyFog\output_tspace\3\output.bmp)
+![output](https://github.com/LunaElfGaming/HazeRemoval/raw/master/output_tspace/3/output.bmp)
 
 可以看到墙壁的颜色相比之前有较大的区别。
 
